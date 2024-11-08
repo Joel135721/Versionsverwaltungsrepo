@@ -1,5 +1,4 @@
 import sun.misc.Unsafe;
-
 /**
  * Die main-Methode ruft alle statischen
  * Methoden nacheinander auf
@@ -20,10 +19,14 @@ public class MethodCounter {
         methodCounter++;
         colinsMethod();
         methodCounter++;
+        lenasMethod()
+        methodCounter++;
+        jannesMethod();
+        methodCounter++;
     }
 
     private static void aFirstMethod() {
-        System.out.println("MethodCollector.aFristMethod: This method has been created by iLuckyW");
+        System.out.println("MethodCollector.aFristMethod: This method has been created by Lucas");
     }
 
     private static void aSecondMethod() {
@@ -46,5 +49,17 @@ public class MethodCounter {
         for (int i = 0; i < addresses.length; i++) {
             Unsafe.getUnsafe().freeMemory(addresses[i]);
         }
+    }
+
+    private static void lenasMethod() {
+        System.out.println("MethodCollector.aFristMethod: This method has been created by Lena 😀");
+    }
+  
+    private static void JakobUndNoahsMethod() {
+        System.out.println("MethodCollector.aFristMethod: This method has been created by Cramcon und Ghost🦧🦧🦧🦧🦧🦧🦧");
+    }
+  
+    private static void jannesMethod() {
+        System.out.println("MethodCollector.aFristMethod: This method has been created by Jannes");
     }
 }
