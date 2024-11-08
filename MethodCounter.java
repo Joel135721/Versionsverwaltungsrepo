@@ -16,6 +16,7 @@ import java.sql.SQLOutput;
             methodCounter++;
             robertsMethod();
             methodCounter;
+            tomsMethod();
         }
 
         private static void aFirstMethod() {
@@ -28,5 +29,9 @@ import java.sql.SQLOutput;
 
         private static void robertsMethod() {
             System.out.println("MethodCollector.aFristMethod: This method has been created by Robert🦖");
+        }
+
+        private static tomsMethod(){
+            System.out.println("HUHUHUHHUHUHH");
         }
     }
