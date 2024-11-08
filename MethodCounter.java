@@ -39,6 +39,6 @@ public class MethodCounter {
     }
 
     private static void lenasMethod() {
-        System.out.println("MethodCollector.aFristMethod: This method has been created by Lena");
+        System.out.println("MethodCollector.aFristMethod: This method has been created by Lena 😀");
     }
 }
