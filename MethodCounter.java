@@ -16,7 +16,7 @@ import java.sql.SQLOutput;
             methodCounter++;
             robertsMethod();
             methodCounter;
-            emmaMethod();
+            emmasMethod();
         }
 
         private static void aFirstMethod() {
@@ -30,7 +30,7 @@ import java.sql.SQLOutput;
         private static void robertsMethod() {
             System.out.println("MethodCollector.aFristMethod: This method has been created by Robert🦖");
         }
-        private static void emmaMethod() {
+        private static void emmasMethod() {
             System.out.println("MethodCollector.aFristMethod: This method has been created by Emma🌟");
         }
     }
