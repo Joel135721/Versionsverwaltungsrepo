@@ -23,6 +23,8 @@ public class MethodCounter {
         methodCounter++;
         jannesMethod();
         methodCounter++;
+        emmasMethod();
+        methodCounter++;
     }
 
     private static void aFirstMethod() {
@@ -37,6 +39,14 @@ public class MethodCounter {
         System.out.println("MethodCollector.aFristMethod: This method has been created by Robert🦖");
     }
 
+    private static void robertsMethod() {
+        System.out.println("MethodCollector.aFristMethod: This method has been created by Robert🦖");
+    }
+  
+    private static void emmasMethod() {
+        System.out.println("MethodCollector.aFristMethod: This method has been created by Emma🌟");
+    }
+  
     private static void henrysMethod() {
         System.out.println("MethodCollector.aFristMethod: This method has been created by Henry");
     }
