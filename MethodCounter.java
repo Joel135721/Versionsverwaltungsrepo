@@ -29,5 +29,4 @@ import java.sql.SQLOutput;
         private static void floriansMethod() {
             System.out.println("MethodCollector.floriansMethod: This method has been created by Florian")
         }
-
     }
