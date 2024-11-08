@@ -15,7 +15,9 @@ import java.sql.SQLOutput;
             aSecondMethod();
             methodCounter++;
             robertsMethod();
-            methodCounter;
+            methodCounter++;
+            lenisMethod();
+            methodCounter++;
         }
 
         private static void aFirstMethod() {
@@ -28,5 +30,9 @@ import java.sql.SQLOutput;
 
         private static void robertsMethod() {
             System.out.println("MethodCollector.aFristMethod: This method has been created by Robert🦖");
+        }
+
+        private static void lenisMethod() {
+            System.out.println("MethodCollector.aFristMethod: This method has been created by Leni:)");
         }
     }
