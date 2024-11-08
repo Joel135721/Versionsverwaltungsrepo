@@ -16,6 +16,7 @@ import java.sql.SQLOutput;
             methodCounter++;
             robertsMethod();
             methodCounter;
+            emmaMethod();
         }
 
         private static void aFirstMethod() {
