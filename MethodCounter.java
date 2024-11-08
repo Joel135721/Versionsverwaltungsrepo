@@ -19,8 +19,8 @@ public class MethodCounter {
         methodCounter++;
         leonsMethod();
         methodCounter++;
-        //colinsMethod();
-        //methodCounter++;
+        colinsMethod();
+        methodCounter++;
         lenasMethod();
         methodCounter++;
         jannesMethod();
