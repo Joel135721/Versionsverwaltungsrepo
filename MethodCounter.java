@@ -41,4 +41,8 @@ public class MethodCounter {
     private static void lenasMethod() {
         System.out.println("MethodCollector.aFristMethod: This method has been created by Lena 😀");
     }
+    private static void JakobUndNoahsMethod() {
+        System.out.println("MethodCollector.aFristMethod: This method has been created by Cramcon und Ghost🦧🦧🦧🦧🦧🦧🦧");
+    }
+
 }
