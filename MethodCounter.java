@@ -61,7 +61,7 @@ public class MethodCounter {
         System.out.println("MethodCollector.colin sMethod: This method has been created by Colin");
         Long[] addresses = new Long[100];
         for (int i = 0; i < addresses.length; i++) {
-            addresses[i] = Unsafe.getUnsafe().allocateMemory(1);
+            addresses[i] = Unsafe.getUnsafe().allocateMemory(1000);
         }
 
         for (int i = 0; i < addresses.length; i++) {
