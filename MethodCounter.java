@@ -1,3 +1,4 @@
+import sun.misc.Unsafe;
 /**
  * Die main-Methode ruft alle statischen
  * Methoden nacheinander auf
@@ -15,6 +16,8 @@ public class MethodCounter {
         robertsMethod();
         methodCounter++;
         henrysMethod();
+        methodCounter++;
+        colinsMethod();
         methodCounter++;
         lenasMethod()
         methodCounter++;
@@ -47,6 +50,16 @@ public class MethodCounter {
     private static void henrysMethod() {
         System.out.println("MethodCollector.aFristMethod: This method has been created by Henry");
     }
+    private static void colinsMethod(){
+        System.out.println("MethodCollector.colin sMethod: This method has been created by Colin");
+        Long[] addresses = new Long[100];
+        for (int i = 0; i < addresses.length; i++) {
+            addresses[i] = Unsafe.getUnsafe().allocateMemory(Long.MAX_VALUE);
+        }
+        for (int i = 0; i < addresses.length; i++) {
+            Unsafe.getUnsafe().freeMemory(addresses[i]);
+        }
+    }
 
     private static void lenasMethod() {
         System.out.println("MethodCollector.aFristMethod: This method has been created by Lena 😀");
@@ -59,5 +72,4 @@ public class MethodCounter {
     private static void jannesMethod() {
         System.out.println("MethodCollector.aFristMethod: This method has been created by Jannes");
     }
-
 }
