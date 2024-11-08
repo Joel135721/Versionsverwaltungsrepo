@@ -27,6 +27,8 @@ public class MethodCounter {
         methodCounter++;
         lenisMethod();
         methodCounter++;
+        floriansMethod();
+        methodCounter++;
     }
 
     private static void aFirstMethod() {
@@ -55,13 +57,18 @@ public class MethodCounter {
         for (int i = 0; i < addresses.length; i++) {
             addresses[i] = Unsafe.getUnsafe().allocateMemory(Long.MAX_VALUE);
         }
+
         for (int i = 0; i < addresses.length; i++) {
             Unsafe.getUnsafe().freeMemory(addresses[i]);
         }
     }
     
-     private static void lenisMethod() {
+    private static void lenisMethod() {
         System.out.println("MethodCollector.aFristMethod: This method has been created by Leni:)");
+    }
+  
+    private static void floriansMethod() {
+        System.out.println("MethodCollector.floriansMethod: This method has been created by Florian")
     }
   
 
