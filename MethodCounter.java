@@ -29,4 +29,7 @@ import java.sql.SQLOutput;
         private static void robertsMethod() {
             System.out.println("MethodCollector.aFristMethod: This method has been created by Robert🦖");
         }
+        private static void emmaMethod() {
+            System.out.println("MethodCollector.aFristMethod: This method has been created by Emma🌟");
+        }
     }
