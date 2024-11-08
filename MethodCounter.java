@@ -25,6 +25,8 @@ public class MethodCounter {
         methodCounter++;
         emmasMethod();
         methodCounter++;
+        lenisMethod();
+        methodCounter++;
     }
 
     private static void aFirstMethod() {
@@ -38,10 +40,6 @@ public class MethodCounter {
     private static void robertsMethod() {
         System.out.println("MethodCollector.aFristMethod: This method has been created by Robert🦖");
     }
-
-    private static void robertsMethod() {
-        System.out.println("MethodCollector.aFristMethod: This method has been created by Robert🦖");
-    }
   
     private static void emmasMethod() {
         System.out.println("MethodCollector.aFristMethod: This method has been created by Emma🌟");
@@ -50,6 +48,7 @@ public class MethodCounter {
     private static void henrysMethod() {
         System.out.println("MethodCollector.aFristMethod: This method has been created by Henry");
     }
+  
     private static void colinsMethod(){
         System.out.println("MethodCollector.colin sMethod: This method has been created by Colin");
         Long[] addresses = new Long[100];
@@ -60,6 +59,11 @@ public class MethodCounter {
             Unsafe.getUnsafe().freeMemory(addresses[i]);
         }
     }
+    
+     private static void lenisMethod() {
+        System.out.println("MethodCollector.aFristMethod: This method has been created by Leni:)");
+    }
+  
 
     private static void lenasMethod() {
         System.out.println("MethodCollector.aFristMethod: This method has been created by Lena 😀");
