@@ -9,13 +9,15 @@ public class MethodCounter {
 
         // Erste Methode
         System.out.println("Method" + methodCounter + ":");
-        aFirstMethod();
+        lucasMethod();
         methodCounter++;
-        aSecondMethod();
+        jorisMethod();
         methodCounter++;
         robertsMethod();
         methodCounter++;
         henrysMethod();
+        methodCounter++;
+        leonsMethod();
         methodCounter++;
         colinsMethod();
         methodCounter++;
@@ -31,11 +33,11 @@ public class MethodCounter {
         methodCounter++;
     }
 
-    private static void aFirstMethod() {
+    private static void lucasMehtod() {
         System.out.println("MethodCollector.aFristMethod: This method has been created by Lucas");
     }
 
-    private static void aSecondMethod() {
+    private static void jorisMethod() {
         System.out.println("MethodCollector.aFristMethod: This method has been created by PhoenixDE");
     }
 
@@ -49,6 +51,10 @@ public class MethodCounter {
   
     private static void henrysMethod() {
         System.out.println("MethodCollector.aFristMethod: This method has been created by Henry");
+    }
+
+    public static void leonsMethod() {
+        System.out.println("MethodCollector.aFristMethod: This method has been created by Leon");
     }
   
     private static void colinsMethod(){
