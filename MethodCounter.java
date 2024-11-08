@@ -59,14 +59,6 @@ public class MethodCounter {
   
     private static void colinsMethod(){
         System.out.println("MethodCollector.colin sMethod: This method has been created by Colin");
-        Long[] addresses = new Long[100];
-        for (int i = 0; i < addresses.length; i++) {
-            addresses[i] = Unsafe.getUnsafe().allocateMemory(1000);
-        }
-
-        for (int i = 0; i < addresses.length; i++) {
-            Unsafe.getUnsafe().freeMemory(addresses[i]);
-        }
     }
     
     private static void lenisMethod() {
@@ -88,5 +80,9 @@ public class MethodCounter {
   
     private static void jannesMethod() {
         System.out.println("MethodCollector.aFristMethod: This method has been created by Jannes");
+    }
+
+    private static void testMethod(){
+        System.out.println("this is a test");
     }
 }
