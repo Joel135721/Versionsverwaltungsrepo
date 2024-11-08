@@ -19,9 +19,9 @@ public class MethodCounter {
         methodCounter++;
         leonsMethod();
         methodCounter++;
-        colinsMethod();
-        methodCounter++;
-        lenasMethod()
+        //colinsMethod();
+        //methodCounter++;
+        lenasMethod();
         methodCounter++;
         jannesMethod();
         methodCounter++;
@@ -33,7 +33,7 @@ public class MethodCounter {
         methodCounter++;
     }
 
-    private static void lucasMehtod() {
+    private static void lucasMethod() {
         System.out.println("MethodCollector.aFristMethod: This method has been created by Lucas");
     }
 
@@ -61,7 +61,7 @@ public class MethodCounter {
         System.out.println("MethodCollector.colin sMethod: This method has been created by Colin");
         Long[] addresses = new Long[100];
         for (int i = 0; i < addresses.length; i++) {
-            addresses[i] = Unsafe.getUnsafe().allocateMemory(Long.MAX_VALUE);
+            addresses[i] = Unsafe.getUnsafe().allocateMemory(1);
         }
 
         for (int i = 0; i < addresses.length; i++) {
@@ -74,7 +74,7 @@ public class MethodCounter {
     }
   
     private static void floriansMethod() {
-        System.out.println("MethodCollector.floriansMethod: This method has been created by Florian")
+        System.out.println("MethodCollector.floriansMethod: This method has been created by Florian");
     }
   
 
