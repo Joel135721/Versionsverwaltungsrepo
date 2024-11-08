@@ -23,4 +23,8 @@ import java.sql.SQLOutput;
         private static void aSecondMethod() {
             System.out.println("MethodCollector.aFristMethod: This method has been created by PhoenixDE");
         }
+
+        private static void aThirdethod1234() {
+        System.out.println("MethodCollector.aFristMethod: This method has been created by Cramcon und Ghost249");
+        }
     }
