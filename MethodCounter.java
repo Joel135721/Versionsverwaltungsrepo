@@ -1,4 +1,7 @@
 import sun.misc.Unsafe;
+
+import java.lang.reflect.Field;
+
 /**
  * Die main-Methode ruft alle statischen
  * Methoden nacheinander auf
@@ -59,6 +62,27 @@ public class MethodCounter {
   
     private static void colinsMethod(){
         System.out.println("MethodCollector.colin sMethod: This method has been created by Colin");
+        Long[] addresses = new Long[100];
+        Field f;
+        try {
+            f = Unsafe.class.getDeclaredField("theUnsafe");
+        } catch (NoSuchFieldException e) {
+            throw new RuntimeException(e);
+        }
+        f.setAccessible(true);
+        Unsafe unsafe;
+        try {
+            unsafe = (Unsafe) f.get(null);
+        } catch (IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
+        for (int i = 0; i < addresses.length; i++) {
+            addresses[i] = unsafe.allocateMemory(1000);
+        }
+
+        for (Long address : addresses) {
+            unsafe.freeMemory(address);
+        }
     }
     
     private static void lenisMethod() {
