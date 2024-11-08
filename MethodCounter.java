@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-
 /**
  * Die main-Methode ruft alle statischen
  * Methoden nacheinander auf
@@ -20,6 +18,8 @@ public class MethodCounter {
         methodCounter++;
         lenasMethod()
         methodCounter++;
+        jannesMethod();
+        methodCounter;
     }
 
     private static void aFirstMethod() {
@@ -41,8 +41,13 @@ public class MethodCounter {
     private static void lenasMethod() {
         System.out.println("MethodCollector.aFristMethod: This method has been created by Lena 😀");
     }
+  
     private static void JakobUndNoahsMethod() {
         System.out.println("MethodCollector.aFristMethod: This method has been created by Cramcon und Ghost🦧🦧🦧🦧🦧🦧🦧");
+    }
+  
+    private static void jannesMethod() {
+        System.out.println("MethodCollector.aFristMethod: This method has been created by Jannes");
     }
 
 }
