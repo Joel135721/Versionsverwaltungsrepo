@@ -17,7 +17,7 @@ import java.sql.SQLOutput;
             robertsMethod();
             methodCounter++;
             jannesMethod();
-            methodCounter++;
+            methodCounter;
         }
 
         private static void aFirstMethod() {
