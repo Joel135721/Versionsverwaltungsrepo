@@ -1,4 +1,6 @@
- /**
+import java.sql.SQLOutput;
+
+/**
      * Die main-Methode ruft alle statischen
      * Methoden nacheinander auf
      */
@@ -10,9 +12,15 @@
             System.out.println("Method" + methodCounter + ":");
             aFirstMethod();
             methodCounter++;
+            aSecondMethod();
+            methodCounter++;
         }
 
         private static void aFirstMethod() {
             System.out.println("MethodCollector.aFristMethod: This method has been created by iLuckyW");
+        }
+
+        private static void aSecondMethod() {
+            System.out.println("MethodCollector.aFristMethod: This method has been created by PhoenixDE");
         }
     }
